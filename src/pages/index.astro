@@ -4,6 +4,7 @@ import logoDevClad from "../assets/logos/devclad.svg";
 import logoConnectDome from "../assets/logos/connectdome.svg";
 import logoDomeCode from "../assets/logos/domecode.png";
 import logoYC from "../assets/logos/yc.png";
+import { Navbar } from "../components/Navbar";
 ---
 
 <Layout title="Arth Tyagi | Software Developer, Hobby Music Producer">
@@ -17,8 +18,10 @@ import logoYC from "../assets/logos/yc.png";
           Software Developer, Designer, Hobby Music Producer
         </h2>
       </div>
-      <hr class="m-10 border-[0.5px] border-dotted border-zinc-400 w-1/2" />
-      <h2 class="items-center sm:text-3xl text-2xl p-2">
+      <div class="mb-10 mt-5">
+        <Navbar />
+      </div>
+      <h2 class="items-center sm:text-3xl text-2xl p-2 font-bold">
         Currently, I’m building
         <img src={logoDevClad} class="mb-2 w-12 h-12 inline-block" />
         <a
@@ -27,20 +30,23 @@ import logoYC from "../assets/logos/yc.png";
           target="_blank"
           >DevClad
         </a>
-        <p class="text-lg max-w-prose font-light p-2 text-zinc-300">
+        <p class="text-lg max-w-prose font-mono font-extralight p-2 text-zinc-300">
           A social-workspace platform for developers to network better while
           teaming up on projects and hackathons seamlessly.
         </p>
+        <span class="text-lg max-w-prose font-light p-2 text-zinc-300">
+          Visit <a class="text-red-500 font-bold" href="https://devclad.com"
+            >devclad.com</a
+          >
+        </span>
       </h2>
       <hr class="m-10 border-[0.5px] border-dotted border-zinc-400 w-1/2" />
-      <h2 class="items-center sm:text-2xl text-xl">
-        Previously, I worked on
-      </h2>
+      <h2 class="items-center sm:text-2xl text-xl">Previously, I worked on</h2>
       <div
         class="mt-12 sm:space-x-4 space-y-4 sm:space-y-0 sm:flex justify-center"
       >
         <h3
-          class="h-full max-w-sm sm:text-2xl text-xl border-[1px] border-neutral-800 p-5 rounded-md"
+          class="h-full bg-black duration-300 max-w-sm sm:text-2xl text-xl border-[1px] border-neutral-800 p-5 rounded-md"
         >
           <img src={logoConnectDome} class="mr-2 mb-2 w-12 h-12 inline-block" />
           <a
@@ -101,7 +107,7 @@ import logoYC from "../assets/logos/yc.png";
         </h3>
       </div>
       <hr class="border-[0.5px] m-10 border-dotted border-zinc-400 w-1/2" />
-      <h3 class="text-xl p-2">
+      <h3 class="text-xl p-2 max-w-sm">
         Apart from this, I have worked on a few other open-source projects.
         <p class="text-base text-neutral-400">
           Check out my <a
@@ -116,7 +122,7 @@ import logoYC from "../assets/logos/yc.png";
         <p class="text-base text-neutral-300">
           I used to freelance for a bit, nothing too notable.
         </p>
-        <p class="text-sm">
+        <p class="text-sm max-w-sm">
           Most recent serious-ish gig was for <a
             class="text-blue-200"
             href="https://picked.ai"
