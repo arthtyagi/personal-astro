@@ -1,0 +1,134 @@
+---
+import Layout from "../layouts/Layout.astro";
+import logoDevClad from "../assets/logos/devclad.svg";
+import logoConnectDome from "../assets/logos/connectdome.svg";
+import logoDomeCode from "../assets/logos/domecode.png";
+import logoYC from "../assets/logos/yc.png";
+---
+
+<Layout title="Arth Tyagi | Software Developer, Hobby Music Producer">
+  <main
+    class="flex flex-col items-center justify-center w-full flex-1 text-center"
+  >
+    <div class="grid place-items-center h-screen">
+      <div class="items-center">
+        <h1 class="text-8xl font-bold p-2">Arth Tyagi</h1>
+        <h2 class="italic text-xl font-light p-2 text-zinc-300">
+          Software Developer, Designer, Hobby Music Producer
+        </h2>
+      </div>
+      <hr class="m-10 border-[0.5px] border-dotted border-zinc-400 w-1/2" />
+      <h2 class="items-center sm:text-3xl text-2xl p-2">
+        Currently, I’m building
+        <img src={logoDevClad} class="mb-2 w-12 h-12 inline-block" />
+        <a
+          class="font-bold tracking-tighter bg-transparent text-fuchsia-200"
+          href="https://devclad.com"
+          target="_blank"
+          >DevClad
+        </a>
+        <p class="text-lg max-w-prose font-light p-2 text-zinc-300">
+          A social-workspace platform for developers to network better while
+          teaming up on projects and hackathons seamlessly.
+        </p>
+      </h2>
+      <hr class="m-10 border-[0.5px] border-dotted border-zinc-400 w-1/2" />
+      <h2 class="items-center sm:text-2xl text-xl">
+        Previously, I worked on
+      </h2>
+      <div
+        class="mt-12 sm:space-x-4 space-y-4 sm:space-y-0 sm:flex justify-center"
+      >
+        <h3
+          class="h-full max-w-sm sm:text-2xl text-xl border-[1px] border-neutral-800 p-5 rounded-md"
+        >
+          <img src={logoConnectDome} class="mr-2 mb-2 w-12 h-12 inline-block" />
+          <a
+            class="font-bold text-indigo-200 tracking-tighter"
+            href="https://connectdome.com"
+            target="_blank"
+            >ConnectDome
+          </a>
+          <span class="text-neutral-400 text-base">2021-22</span>
+          <p class="text-base text-neutral-300">Co-Founder</p>
+          <p class="text-xs mt-2 text-neutral-300">
+            Built this to test the ideas DevClad today is composed of.
+          </p>
+          <span class="inline-flex text-xs text-neutral-400 p-2">
+            Front-page Hacker News on June 5, 2022.
+            <a
+              class="text-orange-400"
+              href="https://github.com/pythonindia/inpycon2020/wiki/List-of-PyCon-India-2020-Projects"
+            >
+              <img src={logoYC} class="mr-2 w-4 h-4 inline-block" />#18 of the
+              day. Peaked at #11</a
+            >
+          </span>
+
+          <span class="inline-flex p-2 text-xs text-neutral-400">
+            Also, got into Techstars Empower Collective (they don’t take equity
+            or provide funding) in March, 2022.
+          </span>
+        </h3>
+        <h3
+          class="max-w-sm sm:text-xl text-2xl border-[1px] border-neutral-800 p-5 rounded-md"
+        >
+          <img src={logoDomeCode} class="mr-2 mb-2 w-12 h-12 inline-block" />
+          <a
+            class="font-bold text-blue-200 tracking-tighter"
+            href="https://github.com/the-domecode/"
+            target="_blank"
+            >DevClad
+          </a>
+          <span class="text-neutral-400 text-base">2020-21</span>
+          <p class="text-base text-neutral-300">
+            Open-Source Developer, Founder
+          </p>
+          <p class="text-xs mt-2 text-neutral-300">
+            A fun primitive alternative to LeetCode with note-taking, support
+            for 6 languages, an autograder, a music player, in-built JS/HTML/CSS
+            code-editor, and more.
+          </p>
+          <span class="inline-flex text-xs text-neutral-400 p-2">
+            This was one of the projects at PyCon India 2020’s Dev Sprints.
+            <a
+              class="inline-flex text-orange-400"
+              href="https://github.com/pythonindia/inpycon2020/wiki/List-of-PyCon-India-2020-Projects"
+            >
+              More Information on Python India’s Github.</a
+            >
+          </span>
+        </h3>
+      </div>
+      <hr class="border-[0.5px] m-10 border-dotted border-zinc-400 w-1/2" />
+      <h3 class="text-xl p-2">
+        Apart from this, I have worked on a few other open-source projects.
+        <p class="text-base text-neutral-400">
+          Check out my <a
+            class="font-bold text-blue-300"
+            href="https://github.com/arthtyagi"
+            target="_blank">Github</a
+          > for more.
+        </p>
+      </h3>
+      <hr class="border-[1px] m-10 border-dotted border-zinc-800 w-1/2" />
+      <h4>
+        <p class="text-base text-neutral-300">
+          I used to freelance for a bit, nothing too notable.
+        </p>
+        <p class="text-sm">
+          Most recent serious-ish gig was for <a
+            class="text-blue-200"
+            href="https://picked.ai"
+            target="_blank">Picked.ai</a
+          > where I produced <a
+            class="text-blue-200"
+            href="https://www.picked.ai/programming-tests/django/"
+            target="_blank">this</a
+          >.
+        </p>
+      </h4>
+      <hr class="border-[1px] m-10 border-dotted border-zinc-800 w-1/2" />
+    </div>
+  </main>
+</Layout>
